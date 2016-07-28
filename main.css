@@ -1,0 +1,54 @@
+html{
+	background-color: #b3b3b3
+}
+
+body {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.social-button{
+	position: relative;
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	margin: 5px;
+}
+
+.social-button i {
+	line-height: 50px;
+	color: black;
+	font-size: 35px;
+	display: block;
+	position: absolute;
+	margin: 0;
+	left: 20%;
+	z-index: 10;
+}
+
+.social-button span {
+	background-color: #00FFFF;
+	border-radius: 0;
+	display: block;
+	height: 0;
+	margin: 0;
+	position: absolute;
+	-webkit-transition: all 0.4s;
+	   -moz-transition: all 0.4s;
+	     -o-transition: all 0.4s;
+	        transition: all 0.4s;
+	width: 0;
+	left: 50%;
+	top: 50%;
+}
+
+.social-button:hover span {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: -25px; 
+}
